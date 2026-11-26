@@ -1,0 +1,91 @@
+/* Conteúdo do relatório Morfologia, Gurupi, 2026. */
+.management-view, .study-view { padding-bottom: 40px; }
+.study-foundation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 40px;
+  padding: 30px 0 36px;
+  margin-bottom: 32px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.study-foundation > .eyebrow { grid-column: 1 / -1; font-size: 12px; }
+.study-foundation h2 { font: 36px/1.15 var(--serif); grid-column: 1 / -1; font-weight: 400; }
+.study-foundation > p:not(.eyebrow) { font-size: 16px; line-height: 1.8; color: #53624f; }
+.study-view .study-layout { grid-template-columns: 1.7fr 1fr; gap: 40px; align-items: start; }
+.study-view .study-classification { gap: 24px; }
+.study-view .study-classification > div { min-width: 0; }
+.study-view .study-classification > .eyebrow { font-size: 12px; }
+.study-view .study-classification h2 { font-size: 32px; margin-bottom: 10px; }
+.study-view .study-classification p { font-size: 16px; line-height: 1.8; color: #53624f; }
+.study-view .study-classification p + p { margin-top: 16px; }
+.study-view .study-classification .classification-name { color: var(--clay); font-size: 16px; margin-bottom: 20px; }
+.study-view .study-classification .text-link { font-size: 14px; margin-top: 20px; }
+.study-view .study-credits { display: block; padding: 28px; }
+.study-view .study-credits > .eyebrow { font-size: 12px; }
+.study-view .study-credits ul { font-size: 16px; gap: 12px; line-height: 1.5; }
+.teacher-credit, .document-source { border-top: 1px solid #bbc6af; padding-top: 24px; margin-top: 24px; }
+.teacher-credit .eyebrow, .document-source .eyebrow { font-size: 12px; margin-bottom: 10px; }
+.teacher-credit > p:last-child { font-size: 16px; line-height: 1.6; }
+.document-source h3 { font: 26px/1.2 var(--serif); margin: 12px 0; font-weight: 400; }
+.document-source > p:not(.eyebrow) { font-size: 16px; line-height: 1.7; color: #53624f; }
+.document-source .text-link { font-size: 14px; margin-top: 14px; padding: 12px 0; }
+.classification-context { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; padding: 28px; background: #e4e8dc; }
+.classification-context h3 { font: 27px/1.2 var(--serif); font-weight: 400; margin-bottom: 14px; }
+.classification-context p { font-size: 16px; line-height: 1.8; color: #53624f; }
+.source-notes { margin-top: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.source-notes summary { padding: 22px 0; font-size: 16px; cursor: pointer; }
+.source-notes summary:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+.source-notes > div { max-width: 960px; padding: 0 0 24px; }
+.source-notes p { font-size: 16px; line-height: 1.8; color: #53624f; margin-top: 14px; }
+.management-toolbar { display: flex; align-items: center; gap: 24px; padding: 8px 0 24px; border-bottom: 1px solid var(--line); }
+.management-toolbar > p { font-size: 14px; line-height: 1.6; color: #53624f; }
+.management-choice { padding: 12px 20px; font-size: 14px; white-space: nowrap; }
+.management-choice[aria-pressed=true] { background: var(--ink); color: var(--white); }
+.management-profile { padding: 28px 0; }
+.management-profile .eyebrow { font-size: 12px; margin-bottom: 12px; }
+.management-profile h2 { font: 34px/1.2 var(--serif); font-weight: 400; max-width: 800px; }
+.management-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.management-grid article { background: var(--white); padding: 30px; }
+.management-tag { font-size: 12px; letter-spacing: 1.2px; color: var(--clay); }
+.management-grid h3 { font: 29px/1.2 var(--serif); font-weight: 400; margin: 14px 0; }
+.management-grid p { font-size: 16px; line-height: 1.8; color: #53624f; max-width: 600px; }
+.management-care { display: grid; grid-template-columns: 1fr 1.3fr; gap: 36px; padding: 30px; margin-top: 26px; background: var(--green); color: var(--white); }
+.management-care .eyebrow { font-size: 12px; color: #ddc68b; }
+.management-care h3 { font: 29px/1.2 var(--serif); font-weight: 400; margin-top: 14px; }
+.management-care > p { font-size: 16px; line-height: 1.8; }
+.management-context { font-size: 14px; line-height: 1.8; color: #53624f; max-width: 1000px; margin-top: 24px; }
+.field-map-switch { display: flex; margin-top: 18px; border: 1px solid #bfc9b1; }
+.field-map-choice { flex: 1; padding: 12px; font-size: 14px; }
+.field-map-choice[aria-pressed=true] { background: var(--ink); color: var(--white); }
+.field-source-note { font-size: 14px; line-height: 1.7; margin-top: 18px; color: #53624f; }
+.field-record > img { height: 260px; aspect-ratio: auto; object-fit: contain; background: #e4e8dc; }
+.field-record .map-attribution { font-size: 12px; line-height: 1.6; }
+.field-record dl { flex-direction: column; gap: 18px; }
+.field-record dt { font-size: 12px; line-height: 1.5; }
+.field-record dd { font-size: 16px; line-height: 1.6; }
+.field-record .text-link { font-size: 14px; }
+.classification-caption { line-height: 1.7; }
+
+@media (max-width: 1000px) {
+  .study-view .study-layout { grid-template-columns: 1fr; }
+  .study-view .study-credits { display: block; }
+}
+@media (max-width: 640px) {
+  .view-navigation .view-tab { flex: 1; justify-content: center; padding: 0 5px; font-size: 0; gap: 0; }
+  .view-navigation .view-tab span { font-size: 12px; }
+  .study-foundation, .classification-context, .management-grid, .management-care { grid-template-columns: 1fr; }
+  .study-foundation { gap: 18px; padding: 24px 0; margin-bottom: 24px; }
+  .study-foundation h2 { font-size: 30px; }
+  .study-view .study-classification { grid-template-columns: 1fr; }
+  .study-view .study-classification > .eyebrow { line-height: 1.7; }
+  .study-view .study-classification > div { padding-bottom: 24px; }
+  .study-view .study-credits, .classification-context { padding: 24px; }
+  .management-toolbar { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .management-profile h2 { font-size: 29px; }
+  .management-grid article { padding: 24px; }
+  .management-grid h3, .management-care h3 { font-size: 27px; }
+  .management-care { padding: 24px; gap: 20px; }
+  .field-record > img { height: 250px; }
+  .field-record dd { font-size: 14px; }
+}

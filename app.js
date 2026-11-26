@@ -15,27 +15,49 @@
     const profiles = {
       1: {
         name: 'Latossolo Vermelho-Amarelo',
+        classification: 'Latossolo Vermelho-Amarelo Distrófico típico',
         sequence: ['A', 'AB', 'B'],
         coordinates: '11°44′10.61″S · 49°02′47.68″W',
         altitude: '291,93 m',
-        map: 'https://www.google.com/maps?q=-11.7362806,-49.0465778',
+        mapCoordinates: '11°44′09.0″S · 49°02′53.6″W',
+        mapDocument: 'https://www.google.com/maps?q=-11.7358333,-49.0482222',
+        earth: 'https://earth.google.com/web/@-11.7364986,-49.04672826,292.62800521a,590.4664024d,35y,12.12122999h,0t,0r/data=CgRCAggBMikKJwolCiExTHFXeHJudXJvSmk4Q2VRZWhnU0EyNlBILXc3cXlRcXggAToDCgEwQgIIAEoICOSp5eoEEAE?authuser=0',
         interpretation: 'Os autores relacionam a cor aos óxidos de ferro e a estrutura granular à consistência friável. Essas observações fundamentam a classificação apresentada no estudo.',
+        management: {
+          terrain: 'O relatório descreve relevo plano, favorável ao uso agrícola intensivo e associado a menor escoamento superficial e risco de erosão hídrica.',
+          water: 'A estrutura granular pequena e moderada é associada pelos autores à boa porosidade, à alta infiltração e à drenagem eficiente, favorecendo a aeração das raízes.',
+          retention: 'A textura franco-argilosa é relacionada a uma retenção equilibrada de água, com armazenamento de umidade para o desenvolvimento das plantas durante veranicos.',
+          machinery: 'O relevo plano e a consistência macia em solo seco e friável em solo úmido facilitam a mecanização, com menor esforço de tração e desgaste dos implementos.',
+          care: 'Quando molhado, o solo é plástico e pegajoso. O trabalho orienta evitar o tráfego logo após chuvas intensas para reduzir o embuchamento dos equipamentos e a compactação superficial.',
+          pages: 'Características do Perfil 1 · página 8 do PDF'
+        },
         layers: [
           { symbol: 'A', depth: '0–20 cm', code: '10 YR 3/4', color: 'Bruno-amarelado', grade: 'Forte', dry: 'Macio', swatch: '#6b4a28' },
           { symbol: 'AB', depth: '20–43 cm', code: '7.5 YR 5/6', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#a36c36' },
-          { symbol: 'B', depth: '20–43 cm*', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c', note: '* O material original repete a profundidade de 20–43 cm para AB e B. O valor foi preservado e requer conferência no registro de campo.' }
+          { symbol: 'B', depth: '20–43 cm*', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c', note: '* O PDF repete 20–43 cm para AB e B. O esquema da página 4 chama a camada inferior de C; a descrição e a tabela usam B. Os registros precisam de conferência.' }
         ]
       },
       2: {
         name: 'Latossolo Amarelo',
+        classification: 'Latossolo Amarelo Distrófico típico',
         sequence: ['A', 'BA', 'B'],
         coordinates: '11°44′13.36″S · 49°01′44.10″W',
         altitude: '291,27 m',
-        map: 'https://www.google.com/maps?q=-11.7370444,-49.0289167',
+        mapCoordinates: '11°44′14.0″S · 49°01′44.6″W',
+        mapDocument: 'https://www.google.com/maps?q=-11.7372222,-49.0290556',
+        earth: 'https://earth.google.com/web/@-11.73703906,-49.02901764,290.88661042a,177.64289085d,35y,11.36742558h,0t,0r/data=CgRCAggBMikKJwolCiExTHFXeHJudXJvSmk4Q2VRZWhnU0EyNlBILXc3cXlRcXggAToDCgEwQgIIAEoICNPf2McGEAE?authuser=0',
         interpretation: 'O estudo destaca o matiz 10 YR no horizonte B, a estrutura granular e a consistência macia e friável como observações associadas à classificação apresentada de Latossolo Amarelo.',
+        management: {
+          terrain: 'O relatório descreve relevo plano, favorável ao aproveitamento agrícola em larga escala e associado a menor escoamento superficial e risco de erosão hídrica.',
+          water: 'A estrutura granular pequena e moderadamente desenvolvida é associada à boa infiltração e à drenagem interna eficiente ao longo do perfil, com aeração para o desenvolvimento radicular.',
+          retention: 'Segundo os autores, a textura franco-argilosa favorece o equilíbrio entre a retenção de água disponível às culturas e a circulação de ar no solo.',
+          machinery: 'O trabalho associa o relevo plano, a profundidade efetiva e as consistências macia e friável à facilidade de preparo da área e à menor exigência de tração das máquinas.',
+          care: 'Em condição molhada, a consistência é plástica e pegajosa. O trabalho orienta evitar o tráfego com umidade excessiva para prevenir a compactação superficial e preservar a qualidade física do solo.',
+          pages: 'Características do Perfil 2 · página 15 do PDF'
+        },
         layers: [
           { symbol: 'A', depth: '0–22 cm', code: '7.5 YR 5/6', color: 'Bruno-forte', grade: 'Moderada', dry: 'Ligeiramente duro', swatch: '#a36c36' },
-          { symbol: 'BA', depth: '22–50 cm', code: '10 YR 5/6', color: 'Bruno-amarelado', grade: 'Moderada', dry: 'Macio', swatch: '#aa7f38' },
+          { symbol: 'BA', depth: '22–50 cm', code: '10 YR 5/6', color: 'Bruno-amarelado', grade: 'Moderada', dry: 'Macio', swatch: '#aa7f38', note: 'O esquema e a descrição identificam esta camada como BA (páginas 11 e 13). A tabela da página 16 registra AB para a mesma profundidade; aqui foi mantido BA.' },
           { symbol: 'B', depth: '50–95 cm', code: '10 YR 5/8', color: 'Bruno-amarelado', grade: 'Moderada', dry: 'Macio', swatch: '#b7862f' }
         ]
       }
@@ -45,7 +67,8 @@
       explore: 'Explorador de horizontes',
       compare: 'Comparação dos perfis',
       field: 'Localização do estudo',
-      study: 'O estudo e suas referências'
+      management: 'Manejo e comportamento do solo',
+      study: 'O estudo, autores e relatório'
     };
     const viewActions = $$('.view-tab[data-view]');
     const viewTabs = $$('.view-navigation .view-tab[data-view]');
@@ -54,6 +77,8 @@
     let activeLayer = 0;
     let slicePosition = 15;
     let fieldProfile = 1;
+    let fieldMapSource = 'earth';
+    let managementProfile = 1;
     let comparisonKey = 'A';
     let touring = false;
     let tourIndex = 0;
@@ -141,6 +166,7 @@
       put('#current-dry', layer.dry);
       put('#current-wet', 'Friável');
       put('#current-soaked', 'Plástico e pegajoso');
+      put('#current-transition', 'Gradual');
       put('#current-note', layer.note || '');
       const note = $('#current-note');
       if (note) note.hidden = !layer.note;
@@ -181,6 +207,7 @@
       });
       put('#active-profile-index', String(activeProfile).padStart(2, '0'));
       put('#profile-name', profile.name);
+      put('#profile-classification', 'Distrófico típico · classificação proposta no trabalho');
       put('#profile-sequence', profile.sequence.join(' · '));
       put('#profile-location', profile.coordinates);
       put('#interpretation', profile.interpretation);
@@ -261,7 +288,8 @@
         ['Consistência seca', first.dry, second.dry],
         ['Consistência úmida', 'Friável', 'Friável'],
         ['Consistência molhada', 'Plástico e pegajoso', 'Plástico e pegajoso'],
-        ['Textura', 'Franco-argilosa', 'Franco-argilosa']
+        ['Textura', 'Franco-argilosa', 'Franco-argilosa'],
+        ['Transição', 'Gradual', 'Gradual']
       ];
       const body = $('#compare-data');
       if (body) {
@@ -282,7 +310,7 @@
         body.replaceChildren(fragment);
       }
       put('#compare-summary', comparisonKey === 'transition'
-        ? 'Transição: horizonte AB no Perfil 01 e BA no Perfil 02.'
+        ? 'Transição: AB no Perfil 01 e BA no Perfil 02. A tabela da página 16 usa AB para o Perfil 02, enquanto o esquema e a descrição usam BA.'
         : comparisonKey === 'B'
           ? 'Horizontes B. * No Perfil 01, 20–43 cm repete o intervalo de AB no original e requer conferência.'
           : 'Horizontes A: camadas superficiais dos dois perfis.');
@@ -299,22 +327,47 @@
         button.classList.toggle('is-active', active);
         button.setAttribute('aria-pressed', String(active));
       });
+      const isEarth = fieldMapSource === 'earth';
+      $$('.field-map-choice[data-source]').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.source === fieldMapSource));
+      });
       const photo = $('#field-photo');
       if (photo) {
-        photo.src = `assets/local-perfil-${fieldProfile}.webp`;
-        photo.alt = `Imagem de satélite da localização do Perfil ${fieldProfile}, conforme o material original. Google Earth.`;
+        photo.src = `assets/${isEarth ? 'local' : 'mapa'}-perfil-${fieldProfile}.webp`;
+        photo.alt = `Localização do Perfil ${fieldProfile} no ${isEarth ? 'Google Earth' : 'Google Maps'}, reproduzida do PDF.`;
       }
       put('#field-title', `Perfil ${String(fieldProfile).padStart(2, '0')} — ${profile.name}`);
-      put('#field-coordinates', profile.coordinates);
-      put('#field-altitude', profile.altitude);
+      put('#field-coordinates', isEarth ? profile.coordinates : profile.mapCoordinates);
+      put('#field-altitude', isEarth ? profile.altitude : 'Não informada neste registro');
+      put('#field-coordinate-source', `PONTO REGISTRADO NO ${isEarth ? 'GOOGLE EARTH' : 'GOOGLE MAPS'}`);
+      put('#field-attribution', `Imagem do relatório · ${isEarth ? 'Google Earth' : 'Google Maps'} · página ${fieldProfile === 1 ? '3' : '10'}`);
       const mapLink = $('#field-map-link');
       if (mapLink) {
-        mapLink.href = profile.map;
-        mapLink.setAttribute('aria-label', `Ver localização do Perfil ${fieldProfile} no Google Maps`);
+        mapLink.href = isEarth ? profile.earth : profile.mapDocument;
+        mapLink.textContent = `Abrir ${isEarth ? 'Google Earth' : 'Google Maps'}`;
+        mapLink.setAttribute('aria-label', `Ver registro do Perfil ${fieldProfile} no ${isEarth ? 'Google Earth' : 'Google Maps'}`);
       }
-      if (options.announce !== false) announce(`Localização do Perfil ${fieldProfile} selecionada. ${profile.coordinates}. Elevação ${profile.altitude}.`);
+      if (options.announce !== false) announce(`Perfil ${fieldProfile}, ${isEarth ? 'Google Earth' : 'Google Maps'}: ${isEarth ? profile.coordinates : profile.mapCoordinates}.`);
     }
     $$('.field-point[data-profile], .field-list-item[data-profile]').forEach(button => button.addEventListener('click', () => setFieldProfile(button.dataset.profile)));
+    $$('.field-map-choice[data-source]').forEach(button => button.addEventListener('click', () => {
+      fieldMapSource = button.dataset.source === 'maps' ? 'maps' : 'earth';
+      setFieldProfile(fieldProfile);
+    }));
+
+    function setManagementProfile(number, options = {}) {
+      const nextProfile = Number(number);
+      if (!profiles[nextProfile]) return;
+      managementProfile = nextProfile;
+      const profile = profiles[managementProfile];
+      $$('.management-choice[data-profile]').forEach(button => {
+        button.setAttribute('aria-pressed', String(Number(button.dataset.profile) === managementProfile));
+      });
+      put('#management-profile-title', profile.classification);
+      Object.entries(profile.management).forEach(([key, value]) => put(`#management-${key}`, value));
+      if (options.announce !== false) announce(`Manejo do Perfil ${managementProfile}. ${profile.classification}.`);
+    }
+    $$('.management-choice[data-profile]').forEach(button => button.addEventListener('click', () => setManagementProfile(button.dataset.profile)));
 
     const tour = [
       { view: 'explore', profile: 1, layer: 0, title: 'Perfil 01 · Horizonte A', description: 'Comece pela superfície: 0–20 cm, cor 10 YR 3/4 e estrutura forte, pequena e granular. Arraste o modelo para observar suas faces.' },
@@ -324,7 +377,9 @@
       { view: 'explore', profile: 2, layer: 1, title: 'Perfil 02 · Horizonte BA', description: 'Entre 22 e 50 cm, a camada de transição apresenta matiz 10 YR 5/6, bruno-amarelado, com estrutura moderada, pequena e granular.' },
       { view: 'explore', profile: 2, layer: 2, title: 'Perfil 02 · Horizonte B', description: 'De 50 a 95 cm, observe o registro 10 YR 5/8. O estudo apresenta este perfil como Latossolo Amarelo.' },
       { view: 'compare', comparison: 'B', title: 'Comparar as camadas subsuperficiais', description: 'Mova o divisor para confrontar as fotografias dos perfis completos. A tabela compara os horizontes B; o modelo e o divisor são recursos visuais, não escalas métricas.' },
-      { view: 'study', title: 'Da observação à interpretação', description: 'Os dois perfis compartilham textura franco-argilosa e estrutura pequena e granular. As diferenças de cor e consistência compõem a interpretação apresentada pelos autores. Consulte a equipe e as referências do estudo.' }
+      { view: 'field', title: 'Localização dos registros', description: 'Os dois perfis estão em Gurupi. Alterne entre os pontos e entre Google Earth e Google Maps para consultar os registros de localização apresentados no PDF.' },
+      { view: 'management', title: 'Do perfil ao manejo', description: 'O trabalho relaciona relevo plano, estrutura granular e textura franco-argilosa à infiltração, à retenção de água e à mecanização. A distrofia foi presumida pelos autores, sem análise química. Compare as observações dos dois perfis.' },
+      { view: 'study', title: 'Da observação à interpretação', description: 'Consulte os fundamentos da morfologia, as classificações propostas, a equipe e o docente. As descrições e interpretações dos perfis estão reunidas nesta seção, junto das notas sobre os registros divergentes.' }
     ];
 
     function applyTourStep(index) {
@@ -451,6 +506,7 @@
     renderComparison('A');
     setComparisonReveal($('#compare-slider')?.value ?? 50);
     setFieldProfile(1, { announce: false });
+    setManagementProfile(1, { announce: false });
     const tourBar = $('#tour-bar');
     if (tourBar) tourBar.hidden = true;
     $('#present-mode')?.setAttribute('aria-pressed', 'false');
