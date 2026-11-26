@@ -22,7 +22,7 @@ Abra `index.html` em um navegador atualizado. Todos os recursos de exploração 
 
 O modelo tridimensional e o diagrama de localização são esquemáticos, sem escala métrica. As amostras de cor são ilustrativas; as notações Munsell e demais atributos foram transcritos do documento original.
 
-As tabelas do relatório registram transição gradual nos seis horizontes. O material repete a profundidade 20–43 cm para os horizontes AB e B do Perfil 1 e identifica sua camada inferior como C no esquema e B na descrição e na tabela. No Perfil 2, a transição aparece como BA no esquema e na descrição, mas AB na tabela. O site preserva os valores, segue a descrição para os símbolos e sinaliza as divergências.
+As tabelas do relatório registram transição gradual nos seis horizontes. No Perfil 1, o horizonte B foi corrigido para 43–67 cm na tabela da página 9 e no site; a descrição da página 7 ainda apresenta 20–43 cm. A camada inferior aparece como C no esquema e B na descrição e na tabela. No Perfil 2, a transição aparece como BA no esquema e na descrição, mas AB na tabela. O site adota a profundidade da tabela corrigida, segue a descrição para os símbolos e sinaliza as divergências.
 
 As localizações de Google Earth e Google Maps são apresentadas separadamente, pois o documento traz pontos distintos. As classificações “distrófico típico” são propostas pelos autores; a distrofia é presumida, sem análise química apresentada. As relações de porosidade, água e mecanização são interpretações do relatório.
 

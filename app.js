@@ -34,7 +34,7 @@
         layers: [
           { symbol: 'A', depth: '0–20 cm', code: '10 YR 3/4', color: 'Bruno-amarelado', grade: 'Forte', dry: 'Macio', swatch: '#6b4a28' },
           { symbol: 'AB', depth: '20–43 cm', code: '7.5 YR 5/6', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#a36c36' },
-          { symbol: 'B', depth: '20–43 cm*', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c', note: '* O PDF repete 20–43 cm para AB e B. O esquema da página 4 chama a camada inferior de C; a descrição e a tabela usam B. Os registros precisam de conferência.' }
+          { symbol: 'B', depth: '43–67 cm', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c', note: 'O esquema da página 4 chama a camada inferior de C; a descrição e a tabela usam B. O explorador segue a descrição e a tabela.' }
         ]
       },
       2: {
@@ -312,7 +312,7 @@
       put('#compare-summary', comparisonKey === 'transition'
         ? 'Transição: AB no Perfil 01 e BA no Perfil 02. A tabela da página 16 usa AB para o Perfil 02, enquanto o esquema e a descrição usam BA.'
         : comparisonKey === 'B'
-          ? 'Horizontes B. * No Perfil 01, 20–43 cm repete o intervalo de AB no original e requer conferência.'
+          ? `Horizontes B: ${first.depth} no Perfil 01 e ${second.depth} no Perfil 02.`
           : 'Horizontes A: camadas superficiais dos dois perfis.');
     }
     $$('.compare-horizon[data-key]').forEach(button => button.addEventListener('click', () => renderComparison(button.dataset.key)));
@@ -372,7 +372,7 @@
     const tour = [
       { view: 'explore', profile: 1, layer: 0, title: 'Perfil 01 · Horizonte A', description: 'Comece pela superfície: 0–20 cm, cor 10 YR 3/4 e estrutura forte, pequena e granular. Arraste o modelo para observar suas faces.' },
       { view: 'explore', profile: 1, layer: 1, title: 'Perfil 01 · Horizonte AB', description: 'Na transição de 20–43 cm, o registro apresenta cor 7.5 YR 5/6 e grau de estrutura moderado. Compare a amostra com a fotografia de campo.' },
-      { view: 'explore', profile: 1, layer: 2, title: 'Perfil 01 · Horizonte B', description: 'A cor passa para 7.5 YR 5/8. Atenção: o PDF repete 20–43 cm para este horizonte e para AB; essa profundidade precisa ser conferida no registro de campo.' },
+      { view: 'explore', profile: 1, layer: 2, title: 'Perfil 01 · Horizonte B', description: 'De 43 a 67 cm, a cor passa para 7.5 YR 5/8. O horizonte apresenta estrutura moderada, pequena e granular, com consistência macia quando seco e friável quando úmido.' },
       { view: 'explore', profile: 2, layer: 0, title: 'Perfil 02 · Horizonte A', description: 'O segundo perfil começa em 0–22 cm. A consistência seca é ligeiramente dura, enquanto a consistência úmida continua friável.' },
       { view: 'explore', profile: 2, layer: 1, title: 'Perfil 02 · Horizonte BA', description: 'Entre 22 e 50 cm, a camada de transição apresenta matiz 10 YR 5/6, bruno-amarelado, com estrutura moderada, pequena e granular.' },
       { view: 'explore', profile: 2, layer: 2, title: 'Perfil 02 · Horizonte B', description: 'De 50 a 95 cm, observe o registro 10 YR 5/8. O estudo apresenta este perfil como Latossolo Amarelo.' },
