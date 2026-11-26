@@ -34,7 +34,7 @@
         layers: [
           { symbol: 'A', depth: '0–20 cm', code: '10 YR 3/4', color: 'Bruno-amarelado', grade: 'Forte', dry: 'Macio', swatch: '#6b4a28' },
           { symbol: 'AB', depth: '20–43 cm', code: '7.5 YR 5/6', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#a36c36' },
-          { symbol: 'B', depth: '43–67 cm', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c', note: 'O esquema da página 4 chama a camada inferior de C; a descrição e a tabela usam B. O explorador segue a descrição e a tabela.' }
+          { symbol: 'B', depth: '43–67 cm', code: '7.5 YR 5/8', color: 'Bruno-forte', grade: 'Moderada', dry: 'Macio', swatch: '#ad652c' }
         ]
       },
       2: {
